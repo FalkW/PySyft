@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Install and start jupyter based on INST_JUPYTER.
+#Install and start jupyter based on INST_JUPYTER
 if [ "${INST_JUPYTER}" = "TRUE" ]; then
     echo "Environment will be set up including Jupyter"
     pip3 install jupyter
