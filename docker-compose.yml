@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+
+  pysyft:
+   build:
+    context: .
+    args:
+     - INST_JUPYTER
+   ports:
+    - 8888:8888
+   volumes:
+    - ./notebooks:/notebooks
+   working_dir: /notebooks
+   stdin_open: true
+   tty: true
