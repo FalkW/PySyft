@@ -7,10 +7,13 @@ services:
     context: .
     args:
      - INST_JUPYTER
+     - notebook
+     - jupyter
    ports:
-    - 8888:8888
+    - 0.0.0.0:8888:8888
    volumes:
     - ./notebooks:/notebooks
    working_dir: /notebooks
    stdin_open: true
    tty: true
+   privileged: true
